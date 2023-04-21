@@ -1,5 +1,4 @@
 
-
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -26,6 +25,6 @@ def verifyLogo(context):
     assert status is True
 
 
-@then(u'close browser')
+@then('close browser')
 def closeBrowser(context):
     context.driver.close()
